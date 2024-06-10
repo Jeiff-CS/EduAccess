@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header seccion -->
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class ="logo">EduAccess</a>
+
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search-box" placeholder="Buscar Cursos..."
+                required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+
+        <div class="profile">
+            <img src="imagenes/logo_usuario.png" alt="" width="100" height="100">
+            <h3>Jeiffer Chu</h3>
+            <span>Student</span>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
+        </div>
+
+        </section>
+
+    </header>
+    <!-- header end  -->
+
+    <!-- barra lateral inicio -->
+    <div class="side-bar">
+
+        <div class="close-side-bar">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="profile">
+            <img src="imagenes/logo_usuario.png" alt="" width="100" height="100">
+            <h3>Jeiffer Chu</h3>
+            <span>Student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>sobre nosotros</span></a>
+            <a href="coursers.html"><i class="fas fa-graduation-cap"></i><span>cursos</span></a>
+            <a href="teacher.html"><i class="fas fa-chalkboard-user"></i><span>profesores</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contacto</span></a>
+        </nav>
+
+    </div>
+    <!-- barra lateral fin -->
+
+    <!-- Inicio Seleccion Rapida -->
+
+    <section class="quick-select">
+        <h1 class="heading">Seleccionar Opciones</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="title">Likes y Comentarios</h3>
+                <p>Total likes : <span>14</span></p>
+                <a href="#" class="inline-btn">ver likes</a>
+                <p>Total comentarios : <span>5</span></p>
+                <a href="#" class="inline-btn">ver comentarios</a>
+                <p>Total playlist : <span>3</span></p>
+                <a href="#" class="inline-btn">ver playlist</a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">Top Categorias</h3>
+                <div class="flex">
+                    <a href="#"><i class="fas fa-code"></i><span>developement</span></a>
+                    <a href="#"><i class="fas fa-chart-simple"></i><span>business</span></a>
+                    <a href="#"><i class="fas fa-pen"></i><span>desing</span></a>
+                    <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
+                    <a href="#"><i class="fas fa-music"></i><span>music</span></a>
+                    <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
+                    <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+                    <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="title">Temas Populares</h3>
+                <div class="flex">
+                    <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+                    <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+                    <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
+                    <a href="#"><i class="fab fa-react"></i><span>react</span></a>
+                    <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+                    <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
+                </div>
+            </div>
+
+            <div class="box tutor">
+                <h3 class="title">Conviertete en Tutor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Officiis, deserunt labore! Repudiandae dolore aspernatur nesciunt.</p>
+                <a href="register.html" class="inline-btn">Empezar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fin Seleccion Rapida -->
+
+    <!-- Inicio seccion de Cursos -->
+    <section class="courses">
+
+        <h1 class="heading">Nuestros Cursos</h1>
+
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor.png" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/html.png" class="thumb" alt="">
+                <h3 class="title">Tutorial HTML completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor2.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/css.png" class="thumb" alt="">
+                <h3 class="title">Tutorial CSS completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor3.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/php.png" class="thumb" alt="">
+                <h3 class="title">Tutorial CSS completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor4.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/js.png" class="thumb" alt="">
+                <h3 class="title">Tutorial CSS completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+            
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor5.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/boots.png" class="thumb" alt="">
+                <h3 class="title">Tutorial Bootstrap completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor6.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/react.png" class="thumb" alt="">
+                <h3 class="title">Tutorial React completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <!-- <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor7.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/mysql.png" class="thumb" alt="">
+                <h3 class="title">Tutorial MySQL completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor8.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/jquery.png" class="thumb" alt="">
+                <h3 class="title">Tutorial JQuery completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+            <div class="box">
+                <div class="tutor">
+                    <img src="imagenes/logo_tutor9.jpg" alt="">
+                    <div>
+                        <h3>Pedro Mio</h3>
+                        <span>21-05-2024</span>
+                    </div>
+                </div>
+                <img src="imagenes/sass.png" class="thumb" alt="">
+                <h3 class="title">Tutorial SASS completo</h3>
+                <a href="playlist.html" class="inline-btn">Ver playlist</a>
+            </div>
+
+        </div>-->
+
+        <div class="more-btn">
+            <a href="coursers.html" class="inline-option-btn">Ver mas</a>
+        </div> 
+
+    </section>
+    <!-- Fin seccion de Cursos -->
+    
+
+
+
+    <!-- seccion footer inicio -->
+
+    <footer class="footer">
+
+        &copy; copyright @ 2022 by <span> EduAccess Corp.</span> | Derechos reservados!
+
+    </footer>
+
+    <!-- seccion footer fin -->
+
+ <script src="js/script.js"></script>
+    
+</body>
+</html>
