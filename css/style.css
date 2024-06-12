@@ -602,11 +602,48 @@ section{
     color: var(--main-color);
 }
 
+.playlist .row{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--white);
+}
 
+.playlist .row .col{
+    flex: 1 1 40rem;
+}
 
+.playlist .row .col .save_list button{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
 
+.playlist .row .col .save_list button i{
+    color: var(--black);
+    margin-right: 1rem;
+}
 
+.playlist .row .col .save_list button span{
+    color: var(--black);
+}
 
+.playlist .row .col .save_list button:hover{
+    background-color: var(--black);
+}
+
+.playlist .row .col .save_list button:hover i{
+    color: var(--white);
+}
+
+.playlist .row .col .save_list button:hover span{
+    color: var(--white);
+}
 
 
 
