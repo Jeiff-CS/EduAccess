@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --main-color:#8e44ad;
+    --red:#e74c3c;
+    --oragen: #f39c12;
+    --white: #fff;
+    --black: #2c3e50;
+    --light-color:#888;
+    --light-bg: #eee;
+    --border:.1rem solid rgba(0,0,0,.2);
+}
+
+.ver-video .video-detalle{
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.ver-video .video-detalle .video{
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.ver-video .video-detalle .title{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1.5rem 0;
+}
+
+.ver-video .video-detalle .info{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--border);
+}
+
+.ver-video .video-detalle .info p{
+    font-size: 1.6rem;
+}
+
+.ver-video .video-detalle .info p i{
+    margin-right: 1rem;
+    color: var(--main-color);
+}
+
+.ver-video .video-detalle .info p span{
+    color: var(--light-color);
+}
+
+.ver-video .video-detalle .tutor{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ver-video .video-detalle .tutor img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit:  cover;
+}
+
+.ver-video .video-detalle .tutor h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+}
+
+.ver-video .video-detalle .tutor span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.ver-video .video-detalle .flex{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.ver-video .video-detalle .flex a{
+    margin-top: 0;
+}
+
+.ver-video .video-detalle .flex button{
+    background-color: var(--light-bg);
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.ver-video .video-detalle .flex button i{
+    color: var(--black);
+    margin-right: 1rem;
+}
+
+.ver-video .video-detalle .flex button span{
+    color: var(--light-color);
+}
+
+.ver-video .video-detalle .flex button:hover{
+    background-color: var(--black);
+}
+
+.ver-video .video-detalle .flex button:hover i{
+    color: var(--white);
+}
+
+.ver-video .video-detalle .flex button:hover span{
+    color: var(--white);
+}
+
+.ver-video .video-detalle .descripcion{
+    padding-top: 2rem;
+}
+
+.ver-video .video-detalle .descripcion p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    white-space: pre-line;
+}
+
+.comentarios .add-comment{
+    background-color: var(--white);
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.comentarios .add-comment textarea{
+    border-radius: .5rem;
+    padding: 1.4rem;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--light-bg);
+    resize: none;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.comentarios .show-comments{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.comentarios .show-comments .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.comentarios .show-comments .user img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comentarios .show-comments .user h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+}
+
+.comentarios .show-comments .user span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.comentarios .show-comments .text{
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1rem 1.5rem;
+    color: var(--black);
+    margin: .5rem 0;
+    position: relative;
+    z-index: 0;
+    white-space: pre-line;
+    font-size: 1.8rem;
+}
+
+.comentarios .show-comments .text::before{
+    content: '';
+    position: absolute;
+    top: -1rem; left: 1.5rem;
+    height: 1.2rem;
+    width: 2rem;
+    background-color: var(--light-bg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

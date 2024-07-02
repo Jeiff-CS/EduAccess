@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --main-color:#8e44ad;
+    --red:#e74c3c;
+    --oragen: #f39c12;
+    --white: #fff;
+    --black: #2c3e50;
+    --light-color:#888;
+    --light-bg: #eee;
+    --border:.1rem solid rgba(0,0,0,.2);
+}
+.playlist .row{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.playlist .row .col{
+    flex: 1 1 40rem;
+}
+
+.playlist .row .col .save_list button{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.playlist .row .col .save_list button i{
+    color: var(--black);
+    margin-right: 1rem;
+}
+
+.playlist .row .col .save_list button span{
+    color: var(--black);
+}
+
+.playlist .row .col .save_list button:hover{
+    background-color: var(--black);
+}
+
+.playlist .row .col .save_list button:hover i{
+    color: var(--white);
+}
+
+.playlist .row .col .save_list button:hover span{
+    color: var(--white);
+}
+
+.playlist .row .col .thumb{
+    position: relative;
+    height: 30rem;
+}
+
+.playlist .row .col .thumb span{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: rgba(0,0,0,.3);
+}
+
+.playlist .row .col .thumb img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+
+.playlist .row .col .tutor{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.playlist .row .col .tutor img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.playlist .row .col .tutor h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.playlist .row .col .tutor span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.playlist .row .col .detalles{
+    padding-top: 1.5rem;
+}
+
+
+.playlist .row .col .detalles h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+.playlist .row .col .detalles p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.7rem;
+}
+
+
+.playlist .row .col .detalles .date{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+.playlist .row .col .detalles .date i{
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.playlist .row .col .detalles .date span{
+    color: var(--light-color);
+}
+
+.video-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.video-container .box-container .box{
+    position: relative;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+
+.video-container .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.video-container .box-container .box i{
+    position: absolute;
+    top: 2; left:  2rem; right:  2rem;
+    height: 20rem;
+    background-color:  rgba(0,0,0,.3);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--white);
+    border-radius: .5rem;
+    display: none;
+}
+
+.video-container .box-container .box:hover i{
+    display: flex;
+}
+
+.video-container .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+.video-container .box-container .box:hover h3{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: sticky;
+    bottom: 0; right: 0; left: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    padding:2.5rem 2rem;
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    margin-top: 2rem;
+    z-index: 1000;
+}
+
+.footer span{
+    color: var(--main-color);
+}
