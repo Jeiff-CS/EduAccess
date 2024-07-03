@@ -690,4 +690,8 @@ section{
     .playlist .row .col .thumb img{
         height: 20rem;
     }
+
+    .contact .row .image img{
+        height: auto;
+    }
 }
